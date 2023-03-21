@@ -19,9 +19,43 @@ if (eta < 18) {
 
 else priceFinal = price
   
+// ----------------------------------------------------
   
 console.log('prezzofinale', priceFinal + '€')
 
+// rispondono uguali?
+console.log('entrata uno querysel', document.querySelector('#in_one'))
+
+document.getElementById(in_one)
+console.log('antrata uno getelement', in_one)
+// ...sembra di si
+
+let nome = in_one.value;
+
+// document.getElementById(in_one)
+
+console.log('nome', nome);
+
+// ---------------output inserimento nome--------------------
+
+bottonNome.addEventListener('click', function() {
+let input = document.getElementById('in_one');
+let output = input.value;
+
+  document.getElementById('nome_Out').innerHTML = output;
+  console.log('output bottone nome', output);
+})
+
+// ---------------output km da percorrere--------------------
 
 
 
+
+// ---------------output fascia sconto--------------------
+
+
+
+
+
+
+// ---------------output genera annulla--------------------
