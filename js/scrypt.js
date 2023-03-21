@@ -1,5 +1,26 @@
-let eta = 15
-let numChilometri = 50;
+
+
+
+// ---------------output inserimento nome età--------------------
+
+buttonGenerate.addEventListener('click', function() {
+let inputNome = document.getElementById('in_one');
+let outputNome = inputNome.value;
+
+document.getElementById('nome_Out').innerHTML = outputNome;
+console.log('output bottoneNome', outputNome);
+
+let inputEta = document.getElementById('in_eta');
+let outEta = inputEta.value;
+let numChilometri = outEta
+
+console.log('output outEta', outEta);
+console.log('km visualizzata dentro variabile', numChilometri);
+
+// --------------------------------------
+
+let eta = outEta;
+// let numChilometri = 50;
 const saleYung = 0.2;
 const saleOld = 0.4;
 
@@ -20,14 +41,13 @@ if (eta < 18) {
 else priceFinal = price
   
 // ----------------------------------------------------
-  
 console.log('prezzofinale', priceFinal + '€')
 
 // rispondono uguali?
-console.log('entrata uno querysel', document.querySelector('#in_one'))
+// console.log('entrata uno querysel', document.querySelector('#in_one'))
 
 document.getElementById(in_one)
-console.log('antrata uno getelement', in_one)
+// console.log('antrata uno getelement', in_one)
 // ...sembra di si
 
 let nome = in_one.value;
@@ -35,15 +55,6 @@ let nome = in_one.value;
 // document.getElementById(in_one)
 
 console.log('nome', nome);
-
-// ---------------output inserimento nome--------------------
-
-bottonNome.addEventListener('click', function() {
-let input = document.getElementById('in_one');
-let output = input.value;
-
-  document.getElementById('nome_Out').innerHTML = output;
-  console.log('output bottone nome', output);
 })
 
 // ---------------output km da percorrere--------------------
