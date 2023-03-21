@@ -10,21 +10,27 @@ let outputNome = inputNome.value;
 document.getElementById('nome_Out').innerHTML = outputNome;
 console.log('output bottoneNome', outputNome);
 
-let inputEta = document.getElementById('in_eta');
-let outEta = inputEta.value;
-let numChilometri = outEta
+let inputKm = document.getElementById('in_km');
+let outKm = inputKm.value;
+let numChilometri = outKm
 
-console.log('output outEta', outEta);
+console.log('output outKm', outKm);
 console.log('km visualizzata dentro variabile', numChilometri);
 
 // --------------------------------------
+let inEta = document.getElementById('in_eta');
+let outEta = inEta.value
 
-let eta = outEta;
+let eta = outEta; 
+
+console.log('eta visualizzata outEta', outEta);
+console.log('eta visualizzata dentro variabile', eta);
+
 // let numChilometri = 50;
+
 const saleYung = 0.2;
 const saleOld = 0.4;
-
-let priceForKm = 0.21;
+const priceForKm = 0.21;
 
 let price = numChilometri * priceForKm;
 
