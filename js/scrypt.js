@@ -1,3 +1,14 @@
+// ----------------------refresh reset value------------------
+document.getElementById('in_one').value = '';
+document.getElementById('in_km').value = '';
+document.getElementById('in_eta').value = '';
+// ----------------------button reset innerHTML------------------
+buttonReset.addEventListener('click', function() {
+  document.getElementById('in_one').value = '';
+  document.getElementById('in_km').value = '';
+  document.getElementById('in_eta').value = '';
+  // console.log('booleano?', in_one.boolean);
+})
 
 
 
@@ -38,7 +49,9 @@ const saleYung = 0.2;
 const saleOld = 0.4;
 const priceForKm = 0.21;
 let price = numChilometri * priceForKm;
+
 console.log('prezzo grezzo', price)
+
 let priceFinal = 0;
 
 document.getElementById('tiket-type').innerHTML = 'tariffa standard';
@@ -56,32 +69,9 @@ else priceFinal = price;
 console.log('prezzofinale', priceFinal.toFixed(2) + '€')
 
 document.getElementById('tiket-price').innerHTML =  priceFinal.toFixed(2) + ' €';
-// ----------------------------------------------------
+// -----------------controllo dati---------------------
 
-// rispondono uguali?
-// console.log('entrata uno querysel', document.querySelector('#in_one'))
 
-document.getElementById(in_one)
-// console.log('antrata uno getelement', in_one)
-// ...sembra di si
 
-let nome = in_one.value;
-
-// document.getElementById(in_one)
-
-console.log('nome', nome);
 })
 
-// ---------------output km da percorrere--------------------
-
-
-
-
-// ---------------output fascia sconto--------------------
-
-
-
-
-
-
-// ---------------output genera annulla--------------------
